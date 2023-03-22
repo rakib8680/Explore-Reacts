@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import SingleCountry from '../SingleCountry/SingleCountry';
 
 const Country = () => {
     const [countries, setCountries] = useState([]);
@@ -15,18 +16,11 @@ const Country = () => {
             <h1>All the countries around the world</h1>
             <h3>Available Countries: {countries.length}</h3>
             {
-                countries.map(country => <Countries name={country.name.common} population={country.population}></Countries>)
+                countries.map(country => <SingleCountry name={country.name.common} population={country.population}></SingleCountry>)
             }
         </div>
     )
 };
-function Countries(props) {
-    return (
-        <div>
-            <h4>Name: {props.name}</h4>
-            <p>Population : {props.population}</p>
-        </div>
-    )
-}
+
 
 export default Country;
