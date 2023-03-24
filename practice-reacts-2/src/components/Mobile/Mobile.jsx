@@ -5,7 +5,11 @@ import './Mobile.css'
 
 const Mobile = () => {
     const [value, setValue] = useState(100)
-    const batteryDown = () => setValue(value - 10)
+    const batteryDown = () => {
+        if (value > 0) {
+            return setValue(value - 10)
+        }
+    }
 
 
     return (
