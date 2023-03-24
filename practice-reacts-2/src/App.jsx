@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Blog from './components/Blog/Blog'
+import Mobile from './components/Mobile/Mobile'
 const style = {
   fontSize: '30px',
   fontWeight: 600
@@ -18,6 +19,9 @@ function App() {
       <Blog heading='Man is mortal' author='Rakib Khan'></Blog>
       <Blog heading='Always speak the Truth' author='Shah Rukh Khan'></Blog>
       <Blog heading='Never tell a Lie' author='Aamir Khan'></Blog>
+      <br />
+      <br />
+      <Mobile></Mobile>
     </div>
   )
 }
