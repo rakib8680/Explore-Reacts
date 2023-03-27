@@ -12,9 +12,9 @@ const Cards = () => {
     }, [])
 
     return (
-        <div>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mt-20 gap-5'>
             {
-                cards.map(SingleCard => <Card card={SingleCard}></Card>)
+                cards.map(SingleCard => <Card card={SingleCard} key={SingleCard.id}></Card>)
             }
         </div>
     );
